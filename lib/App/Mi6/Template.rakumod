@@ -59,8 +59,15 @@ jobs:
 EOF
 
 gitignore => qq:to/EOF/,
-.precomp/
-/$dist-*
+.DS_Store
+.precomp
+.lib/precomp
+*.swp
+.ipynb_checkpoints/*
+.log
+.pem
+.idea/
+*.iml
 EOF
 
 test => qq:to/END_OF_TEST/,
